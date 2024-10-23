@@ -1,0 +1,273 @@
+
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galileo Design</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="main-screen" class="relative flex size-full min-h-screen flex-col bg-[#FFFFFF] justify-between group/design-root overflow-x-hidden" style='font-family: Epilogue, "Noto Sans", sans-serif;'>
+    <div>
+      <div class="flex items-center bg-[#FFFFFF] p-4 pb-2 justify-between">
+        <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">CATEGORIAS</h2>
+        <div class="flex w-12 items-center justify-end">
+          <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#141414] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+            <div class="text-[#141414]" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Sección de Paquetes -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('packages')">Paquetes</h3>
+        <div id="packages" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Paquetes -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">margaritas</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.500</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">choclitos</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">maduritos</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">maduritos limon</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">detoditos</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$3.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">cheese tris</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.500</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">picadas</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+
+      <!-- Sección de Especiales -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('specials')">Especiales</h3>
+        <div id="specials" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Especiales -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">perro caliente</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$3.500</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">sandwish</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$3.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">empanada</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">dedo</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+
+      <!-- Sección de Bebidas -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('bebidas')">Bebidas</h3>
+        <div id="bebidas" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Bebidas -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">jugo hit</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$3.500</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">aqua</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.500</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">alpin</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.800</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">avena</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$3.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">agua</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">jugo natural</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">jugo en caja</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+
+      <!-- Sección de Frutas -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('frutas')">Frutas</h3>
+        <div id="frutas" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Frutas -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">mango</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">piña</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">guayaba pera</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">manzana</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">pera</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+
+      <!-- Sección de Confitería -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('confiteria')">Confitería</h3>
+        <div id="confiteria" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Confitería -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">muuu chocolate</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">nucita</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">galletas muuu</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$600</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">bombones</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$600</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">gol chocolate</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$2.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">gomas</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$300</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">splot</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">trident</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$300</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">mentas</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$200</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">festival</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.800</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">mini jet</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">burbuja jet</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">$1.000</p>
+            </div>
+            
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+
+      <!-- Sección de Almuerzos -->
+      <div>
+        <h3 class="cursor-pointer text-[#141414] font-bold py-2" onclick="toggleSection('almuerzos')">Almuerzos</h3>
+        <div id="almuerzos" class="hidden grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+          <!-- Contenido de Almuerzos -->
+          <div class="flex flex-col gap-3 pb-3">
+            <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl" style='background-image: url("https://example.com/image1.png");'></div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">menu 1</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">alas a la BBQ, arroz, ensalada de frutas, tajada y jugo</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">menu 2</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">cerdo a la plancha, arroz, ensala de frutas, tajada y jugo</p>
+            </div>
+            <div>
+              <p class="text-[#141414] text-base font-medium leading-normal">menu 3</p>
+              <p class="text-[#3E4D5B] text-sm font-normal leading-normal">2 burritos mas jugo</p>
+            </div>
+           
+          </div>
+          <!-- Repite los bloques de contenido para los demás campos -->
+          <!-- ... (repite según sea necesario) -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        section.classList.toggle('hidden');
+      }
+    </script>
+  </div>
+</body>
+</html>
+
